@@ -1,123 +1,310 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Code bro</title>
-  <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-  <header>
-    <div id="logo" onclick="slowScroll('#top')">
-      <span>CodeBro</span>
-    </div>
-    <div id="about">
-      <a href="#" title="Возможности" onclick="slowScroll('#main')">About us</a>
-      <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Courses</a>
-      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Contacts</a>
-      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
-    </div>
-  </header>
-
-  <div id="top">
-    <h1>Creating opportunities</h1>
-    <h3>for young people !</h3>
-  </div>
-
-  <div id="main">
-    <div class="intro">
-      <h2>Become a part of the developing IT community</h2>
-      <span>First IT remote school for developing countries</span>
-    </div>
-    <div class="text">
-      <span>CodeBro is absolutely non-profit project where people could acquire precious knowledge and skills needed for building a successful career.</span>
-    </div>
-  </div>
-
-  <div id="overview">
-    <h2>Our courses</h2>
-    <h4>Be greater with us !</h4>
-
-    <div class="img">
-      <img src="https://images.datacamp.com/image/upload/f_auto,q_auto:best/v1603718736/Why_Your_Company_Needs_Python_for_Business_Analytics_xzzles.png" alt="">
-      <span>Python course for beginners</span>
-    </div>
-    <div class="img">
-      <img src="https://miro.medium.com/v2/resize:fit:1400/1*oFfl-1UKLtd8XOswpwgriA.png" alt="">
-      <span>Advanced C++ course</span>
-    </div>
-    <div class="img">
-        <img src="https://devby.io/storage/images/78/78/55/55/derived/445103f7cc308ea5b0b3f2a521fd9753.jpg" alt="">
-        <span>Java developer course</span>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Decent guys</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
       </div>
-      <div class="img">
-        <img src="https://miro.medium.com/v2/resize:fit:1200/1*LyZcwuLWv2FArOumCxobpA.png" alt="">
-        <span>Intermediate Javascript course</span>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html">Decent guys</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#"> About</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#positive">Positive</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#service">Negative</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#contact">Contact</a>
+                              </li>
+   
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div class="text-bg">
+                     <h1>Impact of IT<br> on environment</h1>
+                     <span>Academic English</span>
+                     <p>Our team is eager to present you our team work project "Impact of IT on enviroment" for Academic English course. Please feel comfortable at our landing page as at your favourite website.</p>
+                     <a href="#">Get Started</a>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="text-img">
+                     <figure><img src="images/img.png" /></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- Hosting -->
+      <div id="positive" class="hosting">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>How has IT affected positively the nature ?</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="web_hosting">
+                     <figure><img  src="images/web.jpg" alt="#"/></figure>
+                     <p>1.	Decreased use of paper. It was widespread to use paper documentation on daily-life basis 20-30 years ago. However, nowadays advanced technologies had facilitated that process. Therefore, the most amount of information is stored in memory storages. Those memory storages secures such data as: WWW resources, police data base, financial spreadsheets and etc.</p>
+                     <p>2.	Tools which helps environment. Environmental monitoring and management are one of the sectors that have been transformed by the quick development of IT. We can now gather, evaluate, and interpret enormous volumes of environmental data thanks to IT, which has made it possible for us to make more informed decisions about environmental protection.</p>
+                     <p>3.	Developing new methods in the sphere of collaboration and transportation. IT applications have affected on the way of communication between people. Before the occurrence of advanced IT devices, people need to travel a huge amount of kilometers in order to talk with their families in friends. On the contrast, now there are a lot of IT apps such as video conferencing, instant messaging, and collaboration software, which have enabled people to work and communicate effectively without having to travel frequently.</p>
+                     <p>4. Assistance in the production and saving of raw materials. New IT technologies allow us to save materials during the production and processing , what will help to significantly reduce deforestation, senseless waste of resources . In fact , previous century people don’t even look at waste , we have spent resources without thinking about the consequences, which led us to reduce the ozone layer, global warming, atmospheric pollution, greenhouse effect, ocean pollution, reduction of biodiversity and that's not all .</p>
+                     <p>5. IT, in particular, robots have assisted people with farming. They have a plenty of advantages that we’ll discuss now. 1. Increased Efficiency: Robots can work around the clock without getting tired, which can significantly increase the efficiency of farming operations.
+                        2.	Precision Farming: Robots can be equipped with sensors and cameras that allow them to perform tasks with a high degree of precision. This can lead to better crop yields and less waste.
+                        3.	Reduced Labor Costs: Farming is hard work, and it can be difficult to find enough labor, especially during peak times like planting and harvest seasons. 
+                         </p>
+                     <a href="#">Read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-  </div>
+      <!-- end Hosting -->
+      <!-- Services  -->
+      <div id="service" class="Services">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Negative impact</h2>
+                     <p>On the other hand, advanced technologies aggravate the environment situations. <br>
+                        Moreover, it has provoked some serious problems, which we will discuss now.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/service1.png" alt="#" /></i>
+                     <h3> Mining For Minerals</h3>
+                     <p>A considerable number of finite natural resources and precious metals go into making our electronic devices and other modern technology. The picture is complex, and the ingredients required to make just one phone come from worldwide. This can make the end-to-end analysis of natural resource degradation difficult.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/service2.png" alt="#" /></i>
+                     <h3>Electronic Waste</h3>
+                     <p>A small proportion of old electronic devices are recycled. However, the vast majority end up in landfill sites or burned in dumps. Sadly, these dumps emit methane and other carbon emissions, and our discarded devices leach chemicals, including mercury, that blend with other wastewater contaminants such as pesticides.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/service3.png" alt="#" /></i>
+                     <h3>Carbon Footprint</h3>
+                     <p>The manufacturing process of electronic and technological products requires a significant amount of energy, which contributes to carbon emissions.This has led to an increase in greenhouse gases, which contribute to climate change. However, renewable resources such as solar, geothermal, and wind can help reduce the carbon footprint of energy production.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/service4.png" alt="#" /></i>
+                     <h3>Climate change</h3>
+                     <p>Data centers, which store and process digital information, require substantial amounts of electricity. The energy demand for these facilities, along with the manufacturing and use of electronic devices, contributes to carbon emissions, exacerbating climate change. Efforts to improve energy efficiency in IT and transition to renewable energy sources are essential to mitigate these impacts.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/service5.png" alt="#" /></i>
+                     <h3>Global warming</h3>
+                     <p>Global warming, driven by the accumulation of greenhouse gases like carbon dioxide and methane in the atmosphere, is exacerbated by various human activities, including those related to information technology. The production and usage of electronic devices contribute to carbon emissions. </p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Services-box">
+                     <i><img src="images/service6.png" alt="#" /></i>
+                     <h3>Massive energy usage</h3>
+                     <p>Massive energy usage poses a significant threat to our environment. The burning of fossil fuels to generate electricity and power our homes, businesses, and vehicles releases greenhouse gases, such as carbon dioxide, into the atmosphere. These gases trap heat, leading to global warming, climate change, and a range of other environmental problems.</p>
+                  </div>
+               </div>
+               <a class="read_more" href="#">Read More</a>
+            </div>
+         </div>
+      </div>
+      <!-- end Servicess -->
+      <!-- why -->
+      <div id="why" class="why">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Our goals </h2>
+                     <p>
+                        Goals play a crucial role in the success of any project by providing direction, motivation, and a framework for measuring progress. Well-defined goals serve as a roadmap for the project team, ensuring that everyone is working towards the same objectives and that the project is on track to achieve its desired outcomes.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div id="box_ho" class="why-box">
+                     <i><img src="images/why1.png" alt="#" /></i>
+                     <h3>Goal 1</h3>
+                     <p>Inform the public about positive and negetive effects of IT development on environmental situation in our country.</p>
+                  </div>
+                  <a class="read_more bg" href="#">Read More</a>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="why-box">
+                     <i><img src="images/why2.png" alt="#" /></i>
+                     <h3>Goal 2</h3>
+                     <p>Highlight the problems caused by IT sphere.</p>
+                  </div>
+                  <a class="read_more bg" href="#">Read More</a>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="why-box">
+                     <i><img src="images/why3.png" alt="#" /></i>
+                     <h3>Goal 3</h3>
+                     <p>Find possible solutions which will deal with environmental issues provoked by the development of IT.</p>
+                  </div>
+                  <a class="read_more bg" href="#">Read More</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end why -->
+      <!-- contact -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 offset-md-3 ">
+                  <form class="main_form">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <input class="contactus" placeholder="Name" type="text" name="Name">
+                        </div>
+                        <div class="col-sm-12">
+                           <input class="contactus" placeholder="Email" type="text" name=" Email">
+                        </div>
+                        <div class="col-sm-12">
+                           <input class="contactus" placeholder="Phone" type="text" name="Phone">
+                        </div>
+                        <div class="col-sm-12">
+                           <textarea class="textarea" placeholder="Message" type="text" name="Message">Hello</textarea>
+                        </div>
+                        <div class="col-sm-12">
+                           <button class="send">Send</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
 
-  <div id="contacts">
-    <center><h5>Callback form</h5></center>
-    <form id="form_input">
-      <label for="name">Name <span>*</span></label><br>
-      <input type="text" placeholder="Enter name" name="name" id="name"><br>
-      <label for="email">Your email <span>*</span></label><br>
-			<input type="email" placeholder="Введите email" name="email" id="email"><br>
-			<label for="message">Message<span>*</span></label><br>
-			<textarea placeholder="Enter yout message" name="message" id="message"></textarea><br>
-			<div id="mess_send" class="btn">Send</div>
-    </form>
-  </div>
-
-  <div id="faq">
-    <div class="element">
-      <span class="title">Donation</span><br>
-      <span class="heading">Purpose of donation</span>
-      <p>As we are non-profit project which aims to help people from all of the world to attain heights in the field of IT, we need a funding to offer this opportunity to every human-being on Earth. Your donation will be considered as a contribution to the future generation full of great innovations and amazing discoveries.</p>
-      <span class="heading">Why do we need a donation ?</span>
-      <p>Although we have a tuition for course, our team is aware of the fact that not every human has the capability to pay indicated amount of money. Therefore, we are openning a program based on your funding where prospective students will be accepted. </p>
-      <div class="faqbtn" >Donate</div>
-    </div>
-    <div class="element">
-      <span class="title">Student support</span><br>
-      <span class="heading">What is included in our support service ?</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-      <span class="heading">Что входит в услуги сервиса</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-      <div class="faqbtn" >Visit</div>
-    </div>
-    <div class="element">
-      <span class="title">Tuition fee</span><br>
-      <span class="heading">Какие гарантии есть</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-      <span class="heading">Какие гарантии есть</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-      <div class="faqbtn" >Pay</div>
-    </div>
-  </div>
-  <div class="footer"><p>&copy;<span id="year"> </span><span> CodeBro. All rights reserved.</span></p></div>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    function slowScroll(id) {
-      $('html, body').animate({
-        scrollTop: $(id).offset().top
-      }, 500);
-    }
-
-    $(document).on("scroll", function () {
-      if($(window).scrollTop() === 0)
-        $("header").removeClass("fixed");
-      else
-        $("header").attr("class", "fixed");
-    });
-    let year = document.querySelector("#year");
-
-  $(document).ready(function () {
-  year.innerText = new Date().getFullYear();
-  });
-  </script>
-</body>
+      <!-- end contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <div class="cont">
+                        <h3>Contact now</h3>
+                        <span>Impact of IT Landing Page 2023</span>
+                        <p></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2023 All Rights Reserved. Academic English.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+    
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
 </html>
+
